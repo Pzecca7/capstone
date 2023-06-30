@@ -1,0 +1,189 @@
+[
+    {
+        "tee": 1,
+        "name": "1st Hole",
+        "par": "4",
+        "handicap": 17,
+        "black": 329,
+        "blue": 324,
+        "white": 304,
+        "holeView":"https://drive.google.com/uc?export=view&id=1sK0Dy_LX2f4giRKjhINVlPaW_qT8cllP",
+        "holeMap": "https://drive.google.com/uc?export=view&id=1oHKJDZTvKsmFtBPnXJm1867UX05WDsh-"
+    },
+    
+    {
+        "tee": 2,
+        "name": "2nd Hole",
+        "par": "5",
+        "handicap": 1,
+        "black": 568,
+        "blue": 530,
+        "white": 520,
+        "holeView": "https://drive.google.com/uc?export=view&id=1AFNM39bxIyQ-wBAboYj2QX3G_ES-tkSF",
+        "holeMap": "https://drive.google.com/uc?export=view&id=1VBBNg8BoNfLIyuwPutYmAYMl2vtNb4j7"
+    },
+    {
+        "tee": 3,
+        "name": "3rd Hole",
+        "par": "3",
+        "handicap": 13,
+        "black": 242,
+        "blue": 188,
+        "white": 165,
+        "holeView": "https://drive.google.com/uc?export=view&id=18tgwo0ggzhCi0PxvYSTbSf8v97sceYhf",
+        "holeMap": "https://drive.google.com/uc?export=view&id=1ljp9tGa5ogEIA_9KidiCMMf1isFX1n9S"
+    },
+    {
+        "tee": 4,
+        "name": "4th Hole",
+        "par": "4",
+        "handicap": 7,
+        "black": 418,
+        "blue": 382,
+        "white": 374,
+        "holeView": "https://drive.google.com/uc?export=view&id=1htpctvnHzko5GCSg7_uJlTr8uW9Z4kZw",
+        "holeMap":"https://drive.google.com/uc?export=view&id=13HiJ69vy5LC1i0lNVAf-fgwy4IjlNbLZ"
+    },
+    {
+        "tee": 5,
+        "name": "5th Hole",
+        "par": "4",
+        "handicap": 9,
+        "black": 406,
+        "blue": 374,
+        "white": 357,
+        "holeView": "https://drive.google.com/uc?export=view&id=1zmx4oSZVZpYtQS_EroqFQpDncxyESkHD",
+        "holeMap": "https://drive.google.com/uc?export=view&id=1PXcDBejuLSppGVRC8FgugHmSdikQuXSN"
+    },
+    {
+        "tee": 6,
+        "name": "6th Hole",
+        "par": "4",
+        "handicap": 3,
+        "black": 451,
+        "blue": 423,
+        "white": 390,
+        "holeView": "https://drive.google.com/uc?export=view&id=1rcuobyS4R50PD9dxN9X395aXDMR6jOPF",
+        "holeMap": "https://drive.google.com/uc?export=view&id=10H4K1FNRI5ENmesLMPB-XHkH7-3mJ9Nn"
+    },
+    {
+        "tee": 7,
+        "name": "7th Hole",
+        "par": "3",
+        "handicap": 15,
+        "black": 215,
+        "blue": 187,
+        "white": 157,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 8,
+        "name": "8th Hole",
+        "par": "4",
+        "handicap": 11,
+        "black": 367,
+        "blue": 324,
+        "white": 314,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 9,
+        "name": "9th Hole",
+        "par": "5",
+        "handicap": 5,
+        "black": 559,
+        "blue": 515,
+        "white": 462,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 10,
+        "name": "10th Hole",
+        "par": "4",
+        "handicap": 12,
+        "black": 381,
+        "blue": 365,
+        "white": 345,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 11,
+        "name": "11th Hole",
+        "par": "5",
+        "handicap": 6,
+        "black": 533,
+        "blue": 475,
+        "white": 429,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 12,
+        "name": "12th Hole",
+        "par": "3",
+        "handicap": 18,
+        "black": 212,
+        "blue": 190,
+        "white": 160,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 13,
+        "name": "13th Hole",
+        "par": "4",
+        "handicap": 4,
+        "black": 432,
+        "blue": 409,
+        "white": 377,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 14,
+        "name": "14th Hole",
+        "par": "5",
+        "handicap": 2,
+        "black": 545,
+        "blue": 496,
+        "white": 467,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 15,
+        "name": "15th Hole",
+        "par": "4",
+        "handicap": 16,
+        "black": 382,
+        "blue": 378,
+        "white": 351,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 16,
+        "name": "16th Hole",
+        "par": "4",
+        "handicap": 8,
+        "black": 465,
+        "blue": 421,
+        "white": 411,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 17,
+        "name": "17th Hole",
+        "par": "3",
+        "handicap": 14,
+        "black": 196,
+        "blue": 165,
+        "white": 133,
+        "imgSrc": "./images"
+    },
+    {
+        "tee": 18,
+        "name": "18th Hole",
+        "par": "4",
+        "handicap": 10,
+        "black": 431,
+        "blue": 396,
+        "white": 370,
+        "imgSrc": "./images"
+    }
+]

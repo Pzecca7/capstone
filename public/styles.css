@@ -1,0 +1,342 @@
+
+header {
+    height: 200px;
+    width: 100vw;
+    border-top: 15px solid #014730;
+    border-bottom: 15px solid #014730 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    height: calc(165vh - 200px);
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+#house-sketch{
+    height: 300px;
+    padding-left: 50px;
+}
+
+#logo{
+    height: 200px;
+    padding: 50px;
+}
+
+.title {
+   
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    color: #014730;
+}
+
+nav{
+    height: 75px;
+    width: 100vw;
+    background-color: #fdd558;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#nav-bar{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+#barn {
+    height: 100%;
+    width: 100vw;
+   
+    
+}
+
+
+a{
+    color: white;
+    padding: 5px;
+    padding-bottom: 7px;
+    background-color: #014730;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+a:hover{
+    color: #fdd558;
+}
+
+#content {
+    margin-top: 100px;
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.content-container {
+    height: 600px;
+    width: 500px;
+    background-image:  url('https://www.golf-services.com/wp-content/uploads/2018/04/Fotolia_69699910_Subscription_Monthly_XL-1.jpg');
+    background-size: 900px;
+	background-position: -60px;
+    border: 2px solid #014730 ;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 4px 4px 4px rgb(143, 143, 143);
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: large;
+    font-weight: bold;
+}
+
+ul {
+    padding: 20px;
+}
+
+li {
+    font-size: larger;
+    padding: 20px;
+}
+
+.member-name{
+    margin-top: 20px;
+    font-size: large;
+}
+
+.nm-container{
+    margin-top: 65px;
+    height: 150px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+
+}
+
+.nm-image-name{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.notable-memebers {
+
+    height: 125px;
+    border-radius: 50%;
+}
+
+#photos-container {
+    background-color: #014730;
+    height: 400px;
+    width: 100vw;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+
+}
+
+.scenic-photos {
+    height: 300px;
+    border: 2px solid #fdd558;
+}
+
+#add-hole {
+    margin-top: 100px;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+form {
+    color: #014730;
+    font-weight: bold;
+    gap: 25px;
+    font-size: larger;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    margin-right: 15px;
+
+
+}
+
+#submit-btn{
+    background-color:  #014730;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+
+}
+
+#holes {
+    height: 1200px;
+    width: 100vw;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hole-container {
+    height: 1000px;
+    width: 1000px;
+    border: 5px solid #014730;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.hole-view{
+    height: 179.1px;
+
+}
+.hole-info {
+    background-color: #014730;
+    height: 100px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.name {
+    color: #fdd558;
+    font-size: 50px;
+    border: 2px solid #fdd558;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.par {
+    color: #fdd558;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hcp {
+    color: #fdd558;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.black {
+    font-weight: bold;
+}
+
+.blue {
+    color: rgb(35, 102, 246);
+    font-weight: bold;
+}
+
+.white {
+    color: white;
+    font-weight: bold;
+}
+
+.shot-input-container {
+    height: 100px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 100px;
+    gap: 20px;
+}
+
+.add-shot-btn{
+    background-color:  #014730;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+
+}
+
+.results-container {
+    height: 400px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shot-list{
+    color: #014730;
+    font-weight: bold;
+    height: 400px;
+    width: 300px;
+    list-style-type:decimal;
+}
+
+.save-btn {
+    background-color:  #014730;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+    margin-right: 500px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-weight: bold;
+    background: #014730;
+    color:#fdd558;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.hole-map {
+    height: 500px;
+    margin-top: 125px;
+}
+
+.green {
+    background-color: rgb(0, 157, 0);
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
