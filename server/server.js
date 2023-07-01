@@ -22,7 +22,8 @@ app.get('/', (req,res) => {
          getShots,
          removeShot,
          updateGreenInReg,
-         savedShots
+         savedShots,
+         getResults
 
 } = require('./controller')
 
@@ -32,6 +33,7 @@ app.get('/', (req,res) => {
  app.delete("/hamiltonFarm/:index", removeShot)
  app.put("/hamiltonFarm/:index", updateGreenInReg)
  app.post("/hamiltonFarm/saved", savedShots)
+ app.get("/hamiltonFarm/results", getResults)
  
  
 

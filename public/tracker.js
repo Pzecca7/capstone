@@ -65,9 +65,12 @@ const savedShots = () => {
     let bodyObj = {
         hole: holeSelect.value,
         clubs: savedClubs,
+        score: savedClubs.length
 
 
     }
+
+    console.log(bodyObj)
 
     axios.post(`${baseURL}/saved`, bodyObj)
         .then(response => {  

@@ -40,5 +40,8 @@ module.exports = {
         console.log(req.body)
         resultDB.push(req.body)
         res.status(200).send(resultDB)
+    },
+    getResults: (req,res) => {
+        res.status(200).send(resultDB)
     }
 }
