@@ -11,7 +11,16 @@ header {
 }
 
 main {
-    height: calc(165vh - 200px);
+    height: 2000px;
+    
+}
+
+#saved-main{
+    height: 50000px;
+}
+
+#tracker-main{
+    height: 1300px;
 }
 
 h1 {
@@ -91,7 +100,7 @@ a:hover{
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 
@@ -174,7 +183,7 @@ li {
 }
 
 #add-hole {
-    margin-top: 100px;
+    margin-top: 20px;
     height: 100px;
     width: 100vw;
     display: flex;
@@ -195,7 +204,7 @@ form {
 
 }
 
-#submit-btn{
+.submit-btn{
     background-color:  #014730;
     padding: 5px 15px;
     color: white;
@@ -204,7 +213,7 @@ form {
 
 }
 
-#holes {
+#hole-section {
     height: 1200px;
     width: 100vw;
     margin-top: -50px;
@@ -340,3 +349,14 @@ button {
     border-radius: 5px;
     border: 1px solid black;
 }
+
+#add-round {
+    margin-top: 20px;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+    

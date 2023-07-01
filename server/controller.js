@@ -6,6 +6,11 @@ let shotID = 1
 let resultDB = require('./db-3.json')
 let resultID = 1
 
+let roundDB = require('./db-4.json')
+let roundID = 3
+
+
+
 module.exports = {
 
     getHole: (req,res) => {
@@ -40,6 +45,9 @@ module.exports = {
         console.log(req.body)
         resultDB.push(req.body)
         res.status(200).send(resultDB)
+    },
+    getRound: (req,res) => {
+        res.status(200).send(roundDB)
     },
     getResults: (req,res) => {
         res.status(200).send(resultDB)

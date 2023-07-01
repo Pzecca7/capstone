@@ -1,7 +1,7 @@
-const holesSection = document.querySelector('#holes')
+const holeSection = document.querySelector('#hole-section')
 const holeForm = document.querySelector('#hole-form')
 const holeSelect = document.querySelector('#hole')
-const submitBtn = document.querySelector('#submit-btn')
+const submitBtn = document.querySelector('.submit-btn')
 
 let savedClubs = []
 
@@ -25,16 +25,15 @@ const addShot = () => {
     hole: holeSelect.value,
     club: clubInput.value,
     greenInReg: false
-
 }
 
         clubInput.value = ''
 
     axios.post(baseURL, bodyObj)
-        .then(response => {
-          displayShots(response.data)  
-          console.log(response.data)
-        }).catch(err => console.log(err))
+    .then(response => {
+        displayShots(response.data)  
+        console.log(response.data)
+    }).catch(err => console.log(err))
 }
 
 const getShots = () => {
@@ -46,10 +45,10 @@ const getShots = () => {
 
 const removeShot = (evt) => {
     axios.delete(`${baseURL}/${evt.target.id}`)
-        .then(response => {
-            displayShots(response.data)
-            console.log(response.data)
-        }).catch(err => console.log(err))
+    .then(response => {
+        displayShots(response.data)
+        console.log(response.data)
+    }).catch(err => console.log(err))
 }
 
 const updateGreenInReg = (evt) => {
@@ -73,25 +72,17 @@ const savedShots = () => {
     console.log(bodyObj)
 
     axios.post(`${baseURL}/saved`, bodyObj)
-        .then(response => {  
-        }).catch(err => console.log(err))
+    .then(response => {  
+    }).catch(err => console.log(err))
         savedClubs= []
 }
-
-
-
-
-
-
-
-
 
 const createHoleContainer = (hole) => {
 
     let holeContainer = document.createElement('div')
     holeContainer.classList.add('hole-container')
 
-    holesSection.innerHTML=``
+    holeSection.innerHTML=``
 
     holeContainer.innerHTML = ` 
     <img alt='Hole View' src=${hole.holeView} class="hole-view"/>
@@ -113,7 +104,7 @@ const createHoleContainer = (hole) => {
         <img alt='Hole Map' src=${hole.holeMap} class='hole-map'/>
     </div> 
 `
-holesSection.appendChild(holeContainer)
+holeSection.appendChild(holeContainer)
 
 getShots()
     
