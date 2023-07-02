@@ -1,7 +1,7 @@
 [
     {
         "tee": 1,
-        "name": "1st Hole",
+        "name": "1. Stable",
         "par": "4",
         "handicap": 17,
         "black": 329,
@@ -57,7 +57,7 @@
     },
     {
         "tee": 6,
-        "name": "6th Hole",
+        "name": "6. Bull Barn",
         "par": "4",
         "handicap": 3,
         "black": 451,

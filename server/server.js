@@ -24,6 +24,7 @@ app.get('/', (req,res) => {
          updateGreenInReg,
          savedShots,
          getRound,
+         addRound,
          
          getResults
 
@@ -36,6 +37,7 @@ app.get('/', (req,res) => {
  app.put("/hamiltonFarm/:index", updateGreenInReg)
  app.post("/hamiltonFarm/saved", savedShots)
  app.get("/hamiltonFarm/round", getRound)
+ app.post("/hamiltonFarm/round", addRound)
  app.get("/hamiltonFarm/results", getResults)
  
  

@@ -1,7 +1,7 @@
 const holeSection = document.querySelector('#hole-section')
 const holeForm = document.querySelector('#hole-form')
 const holeSelect = document.querySelector('#hole')
-const submitBtn = document.querySelector('.submit-btn')
+const submitHoleBtn = document.querySelector('.submit-btn')
 
 let savedClubs = []
 
@@ -123,7 +123,8 @@ const displayShots = shotsArr => {
 
             let listItem = document.createElement('li')
             let clubSelection = document.createElement('span')
-            let removeBtn = document.createElement('button')
+            let removeShotBtn = document.createElement('button')
+            removeShotBtn.classList.add('remove-shot')
         
 
             clubSelection.textContent = club
@@ -134,13 +135,13 @@ const displayShots = shotsArr => {
             clubSelection.addEventListener('click', updateGreenInReg)
 
 
-            removeBtn.id = index
-            removeBtn.textContent = 'Remove'
-            removeBtn.addEventListener('click', removeShot)
+            removeShotBtn.id = index
+            removeShotBtn.textContent = 'Remove'
+            removeShotBtn.addEventListener('click', removeShot)
 
 
             listItem.appendChild(clubSelection)
-            listItem.appendChild(removeBtn)
+            listItem.appendChild(removeShotBtn)
 
             shotList.appendChild(listItem)
 
@@ -155,4 +156,4 @@ const submitNewHole = event => {
 
 }
 
-submitBtn.addEventListener("click", submitNewHole)
+submitHoleBtn.addEventListener("click", submitNewHole)

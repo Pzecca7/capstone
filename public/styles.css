@@ -148,8 +148,6 @@ li {
     align-items: center;
     justify-content: space-evenly;
     
-   
-
 }
 
 .nm-image-name{
@@ -249,7 +247,7 @@ form {
 
 .name {
     color: #fdd558;
-    font-size: 50px;
+    font-size: 40px;
     border: 2px solid #fdd558;
     border-radius: 10px;
     padding: 5px;
@@ -258,13 +256,13 @@ form {
 
 .par {
     color: #fdd558;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .hcp {
     color: #fdd558;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -326,7 +324,7 @@ form {
     margin-right: 500px;
 }
 
-button {
+.remove-shot {
     border-radius: 10px;
     padding: 5px 15px;
     font-weight: bold;
@@ -360,9 +358,19 @@ button {
     gap: 25px;
 }
 
+#round-section{
+    height: 20,000px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: flex-start;
+
+}
+
 .round-container {
     height: 500px;
-    width:100vw;
+    width:2400px;
     background-color: #014730;
     display: flex;
     flex-direction: column;
@@ -394,10 +402,32 @@ button {
     height: 50px;
     width: 100px;
     border-bottom: #014730 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .clubs {
     height: 200px;
     width: 100px;
     border-bottom:#014730 solid 2px;
+}
+
+.fbt-score {
+    height: 300px;
+    width: 100px;
+    border: #014730 solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.score-box {
+    height: 250px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }

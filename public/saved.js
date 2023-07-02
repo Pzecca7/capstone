@@ -1,7 +1,7 @@
 const roundSection = document.querySelector('#round-section')
 const roundForm = document.querySelector('#round-form')
 const roundDate = document.querySelector('#round-date')
-const submitBtn = document.querySelector('.submit-btn')
+const submitRoundBtn = document.querySelector('.submit-btn')
 
 const baseURL = `http://localhost:4000/hamiltonfarm`
 
@@ -19,7 +19,7 @@ const addRound = () => {
     console.log('round added')
 
     let bodyObj = {
-        date: roundDate.input,
+        date: roundDate.value,
         in: 36,
         out: 36,
         total: 72
@@ -29,7 +29,7 @@ const addRound = () => {
     
     axios.post(`${baseURL}/round`, bodyObj)
     .then(response => {
-        displayRounds(response.data)  
+        createRoundContainer(response.data)  
         console.log(response.data)
       }).catch(err => console.log(err))
 
@@ -244,6 +244,13 @@ roundSection.appendChild(roundContainer)
 const displayResults = () => {
 
 }
+
+const submitNewRound = event => {
+    event.preventDefault()
+    addRound()
+}
+
+submitRoundBtn.addEventListener("click", submitNewRound)
 
 getRound()
 

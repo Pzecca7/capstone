@@ -49,6 +49,13 @@ module.exports = {
     getRound: (req,res) => {
         res.status(200).send(roundDB)
     },
+    addRound: (req,res) => {
+        req.body.round = roundID
+        roundDB.push(req.body)
+        res.status(200).send(roundDB)
+        roundID++
+
+    },
     getResults: (req,res) => {
         res.status(200).send(resultDB)
     }
