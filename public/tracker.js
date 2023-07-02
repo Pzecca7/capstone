@@ -10,9 +10,10 @@ const baseURL = `http://localhost:4000/hamiltonfarm`
 const getHole = () => {
     
     axios.get(baseURL+`/${holeSelect.value}`)
-    .then(response =>{
+    .then(response => {
+        console.log(response.data)
         createHoleContainer(response.data)
-    })
+    }).catch(err => console.log(err))
 }
 
 const addShot = () => {
