@@ -222,7 +222,7 @@ form {
 
 .hole-container {
     height: 1000px;
-    width: 1000px;
+    width: 1250px;
     border: 5px solid #014730;
     display: flex;
     align-items: center;
@@ -233,13 +233,14 @@ form {
 }
 
 .hole-view{
-    height: 179.1px;
+    border: 1px solid #014730;
+    height: 224px;
 
 }
 .hole-info {
     background-color: #014730;
     height: 100px;
-    width: 1000px;
+    width: 1250px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -256,13 +257,13 @@ form {
 
 .par {
     color: #fdd558;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .hcp {
     color: #fdd558;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -282,7 +283,7 @@ form {
 
 .shot-input-container {
     height: 100px;
-    width: 1000px;
+    width: 1250px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -304,7 +305,7 @@ form {
     width: 1000px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .shot-list{
@@ -337,6 +338,7 @@ form {
 .hole-map {
     height: 500px;
     margin-top: 125px;
+    margin-right: 100px;
 }
 
 .green {

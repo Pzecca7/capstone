@@ -13,7 +13,7 @@
     
     {
         "tee": 2,
-        "name": "2nd Hole",
+        "name": "2. Middle Road",
         "par": "5",
         "handicap": 1,
         "black": 568,
@@ -24,7 +24,7 @@
     },
     {
         "tee": 3,
-        "name": "3rd Hole",
+        "name": "3. Reach",
         "par": "3",
         "handicap": 13,
         "black": 242,
@@ -35,7 +35,7 @@
     },
     {
         "tee": 4,
-        "name": "4th Hole",
+        "name": "4. School House",
         "par": "4",
         "handicap": 7,
         "black": 418,
@@ -46,7 +46,7 @@
     },
     {
         "tee": 5,
-        "name": "5th Hole",
+        "name": "5. North Field",
         "par": "4",
         "handicap": 9,
         "black": 406,
@@ -68,122 +68,134 @@
     },
     {
         "tee": 7,
-        "name": "7th Hole",
+        "name": "7. Creamery",
         "par": "3",
         "handicap": 15,
         "black": 215,
         "blue": 187,
         "white": 157,
-        "imgSrc": "./images"
+        "holeView":"https://drive.google.com/uc?export=view&id=1Jnu-16jci8Sz-i5Y0yqLXfNn57u30NtS",
+        "holeMap": "https://drive.google.com/uc?export=view&id=10udHbbPYaMh0vg3ViVz5XJS339d3c_kt"
     },
     {
         "tee": 8,
-        "name": "8th Hole",
+        "name": "8. Stoney Lane",
         "par": "4",
         "handicap": 11,
         "black": 367,
         "blue": 324,
         "white": 314,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1g_5_STjbOehIeGoZGd9cvoIUI58O3Yyc",
+        "holeMap":"https://drive.google.com/uc?export=view&id=1i8CD1E3q1LThVvgt-HkywXUYpXXm7I-T"
     },
     {
         "tee": 9,
-        "name": "9th Hole",
+        "name": "9. Water Jump",
         "par": "5",
         "handicap": 5,
         "black": 559,
         "blue": 515,
         "white": 462,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1YhFFt440vX7M6vKpA23mVatW2rA2Esvr",
+        "holeMap":"https://drive.google.com/uc?export=view&id=1DZwg5HFUXmNG0wLi0k14JVa-pT18iD28"
     },
     {
         "tee": 10,
-        "name": "10th Hole",
+        "name": "10. Shag Bark",
         "par": "4",
         "handicap": 12,
         "black": 381,
         "blue": 365,
         "white": 345,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1kXBClwRUWKESzIsoZXQP7bcqcQ-Fohht",
+        "holeMap":""
     },
     {
         "tee": 11,
-        "name": "11th Hole",
+        "name": "11. Carry",
         "par": "5",
         "handicap": 6,
         "black": 533,
         "blue": 475,
         "white": 429,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1vb69i23M_0bo23BDYhK3__psU1iykOp4",
+        "holeMap":""
     },
     {
         "tee": 12,
-        "name": "12th Hole",
+        "name": "12. Relief",
         "par": "3",
         "handicap": 18,
         "black": 212,
         "blue": 190,
         "white": 160,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=15z_2JACZMAehsumgKHVfvFR6AqZOJhxm",
+        "holeMap":""
     },
     {
         "tee": 13,
-        "name": "13th Hole",
+        "name": "13. Ravine",
         "par": "4",
         "handicap": 4,
         "black": 432,
         "blue": 409,
         "white": 377,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1KIeTQ9BxoYggFPu-FqNX73RPXspALgFK",
+        "holeMap":""
     },
     {
         "tee": 14,
-        "name": "14th Hole",
+        "name": "14. Long Look",
         "par": "5",
         "handicap": 2,
         "black": 545,
         "blue": 496,
         "white": 467,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1XO-1M8F26OdMmvdCpIL9K7UThVsINhrZ",
+        "holeMap":""
     },
     {
         "tee": 15,
-        "name": "15th Hole",
+        "name": "15. White Oaks",
         "par": "4",
         "handicap": 16,
         "black": 382,
         "blue": 378,
         "white": 351,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1Hia4L8B-ZXbNFwTbSuaLrm6NoNuigC_C",
+        "holeMap":""
     },
     {
         "tee": 16,
-        "name": "16th Hole",
+        "name": "16. Spook Hollow",
         "par": "4",
         "handicap": 8,
         "black": 465,
         "blue": 421,
         "white": 411,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1cTEJ4QCIvvDambnrhHi5kUAjGH8rX8AH",
+        "holeMap":""
     },
     {
         "tee": 17,
-        "name": "17th Hole",
+        "name": "17. Calamity",
         "par": "3",
         "handicap": 14,
         "black": 196,
         "blue": 165,
         "white": 133,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1_hwXIkr6wIMdSUT6PRqff5MN9XoC48H2",
+        "holeMap":""
     },
     {
         "tee": 18,
-        "name": "18th Hole",
+        "name": "18. Home",
         "par": "4",
         "handicap": 10,
         "black": 431,
         "blue": 396,
         "white": 370,
-        "imgSrc": "./images"
+        "holeView": "https://drive.google.com/uc?export=view&id=1g_e0zqMdBFxrR5E5xJ_Nb-hZgDD0sA4G",
+        "holeMap":""
     }
 ]
