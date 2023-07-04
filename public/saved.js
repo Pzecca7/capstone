@@ -275,6 +275,7 @@ const displayResults = resultsArr => {
     const holeNumberBox = document.querySelector(".num")
     const savedClubs = document.querySelector(".clubs")
     const holeScoreBox = document.querySelector(".hole-score")
+    
 
     resultsArr.forEach((resultsObj) => {
         let { hole, clubs, score} = resultsObj
