@@ -9,7 +9,7 @@ const baseURL = `http://localhost:4000/hamiltonfarm`
 
 const getHole = () => {
     
-    axios.get(baseURL+`/${holeSelect.value}`)
+    axios.get(baseURL+`/hole/${holeSelect.value}`)
     .then(response => {
         console.log(response.data)
         createHoleContainer(response.data)
@@ -30,7 +30,7 @@ const addShot = () => {
 
         clubInput.value = ''
 
-    axios.post(baseURL, bodyObj)
+    axios.post(`${baseURL}/shot`, bodyObj)
     .then(response => {
         displayShots(response.data)  
         console.log(response.data)
@@ -38,14 +38,14 @@ const addShot = () => {
 }
 
 const getShots = () => {
-    axios.get(baseURL)
+    axios.get(`${baseURL}/shot`)
     .then(response => {
         displayShots(response.data)
     }).catch(err => console.log(err))
 }
 
 const removeShot = (evt) => {
-    axios.delete(`${baseURL}/${evt.target.id}`)
+    axios.delete(`${baseURL}/shot/${evt.target.id}`)
     .then(response => {
         displayShots(response.data)
         console.log(response.data)
@@ -53,7 +53,7 @@ const removeShot = (evt) => {
 }
 
 const updateGreenInReg = (evt) => {
-    axios.put(`${baseURL}/${evt.target.id}`)
+    axios.put(`${baseURL}/green-in-reg/${evt.target.id}`)
         .then(response => {
             displayShots(response.data)
             console.log(response.data)

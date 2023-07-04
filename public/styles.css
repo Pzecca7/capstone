@@ -373,6 +373,7 @@ form {
 .round-container {
     height: 500px;
     width:2400px;
+    border: 2.5px black solid;
     background-color: #014730;
     display: flex;
     flex-direction: column;

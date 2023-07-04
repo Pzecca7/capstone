@@ -23,22 +23,34 @@ app.get('/', (req,res) => {
          removeShot,
          updateGreenInReg,
          savedShots,
-         getRound,
+         getRounds,
          addRound,
-         
+         removeRound,
+         updateOutScore,
+         updateInScore,
+         updateTotalScore,
          getResults
 
 } = require('./controller')
 
- app.get("/hamiltonFarm/:hole", getHole)
- app.post("/hamiltonFarm", addShot)
- app.get("/hamiltonFarm", getShots)
- app.delete("/hamiltonFarm/:index", removeShot)
- app.put("/hamiltonFarm/:index", updateGreenInReg)
- app.post("/hamiltonFarm/saved", savedShots)
- app.get("/hamiltonFarm/round", getRound)
- app.post("/hamiltonFarm/round", addRound)
- app.get("/hamiltonFarm/results", getResults)
+ app.get("/hamiltonfarm/hole/:hole", getHole)
+ app.post("/hamiltonfarm/shot", addShot)
+ app.get("/hamiltonfarm/shot", getShots)
+ app.delete("/hamiltonfarm/shot/:index", removeShot)
+ app.put("/hamiltonfarm/green-in-reg/:index", updateGreenInReg)
+ app.post("/hamiltonfarm/saved", savedShots)
+ app.get("/hamiltonfarm/round", getRounds)
+ app.post("/hamiltonfarm/round", addRound)
+ app.delete("/hamiltonfarm/round/:round", removeRound)
+ app.put("/hamiltonfarm/out-score/:round", updateOutScore)
+ app.put("/hamiltonfarm/in-score/:round", updateInScore)
+ app.put("/hamiltonfarm/total-score/:round", updateTotalScore)
+
+
+ app.get("/hamiltonfarm/results", getResults)
+ 
+
+
  
  
 
