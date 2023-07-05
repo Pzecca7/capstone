@@ -88,7 +88,7 @@ const createHoleContainer = (hole) => {
     <img alt='Hole View' src=${hole.holeView} class="hole-view"/>
     <div class="hole-info">
         <p class="name">${hole.name}</p>
-        <p class="par"> Par: ${hole.par}</p>
+        <p class="par-info"> Par: ${hole.par}</p>
         <p class="hcp"> Hcp: ${hole.handicap}</p>
         <p class="black"> Black: ${hole.black} yds</p>
         <p class="blue"> Blue: ${hole.blue} yds</p>
