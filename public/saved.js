@@ -83,7 +83,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -91,7 +91,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -99,7 +99,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -107,7 +107,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -115,7 +115,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -123,7 +123,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -131,7 +131,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">   
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -139,7 +139,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -147,11 +147,11 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="fbt-score">
-                <div class="num">
+                <div class="type-box">
                 <p class="score-type">OUT</p>
                 </div>
                 <div class="score-box">
@@ -165,7 +165,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -173,7 +173,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -181,7 +181,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -189,7 +189,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -197,7 +197,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -205,7 +205,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -213,7 +213,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -221,7 +221,7 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="hole">
@@ -229,11 +229,11 @@ const createRoundContainer = (round) => {
                 </div>
                 <div class="clubs">
                 </div>
-                <div class="hole-score">
+                <div class="hole-score-box">
                 </div>
             </div>
             <div class="fbt-score">
-                <div class="num">
+                <div class="type-box">
                     <p class="score-type">IN</p>
                 </div>
                 <div class="score-box">
@@ -243,7 +243,7 @@ const createRoundContainer = (round) => {
                 </div>
             </div>
             <div class="fbt-score">
-                <div class="num">
+                <div class="type-box">
                     <p class="score-type">TOT</p>
                 </div>
                 <div class="score-box">
@@ -274,7 +274,7 @@ const displayRound = roundObj => {
 const displayResults = resultsArr => {
     const holeNumberBox = document.querySelector(".num")
     const savedClubs = document.querySelector(".clubs")
-    const holeScoreBox = document.querySelector(".hole-score")
+    const holeScoreBox = document.querySelector(".hole-score-box")
     
 
     resultsArr.forEach((resultsObj) => {
