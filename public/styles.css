@@ -126,11 +126,16 @@ h2 {
     font-weight: bold;
 }
 
-ul {
+#facts-list {
     padding: 20px;
 }
 
-li {
+.fact {
+    font-size: larger;
+    padding: 20px;
+}
+
+.club-used {
     font-size: larger;
     padding: 20px;
 }
@@ -486,7 +491,19 @@ form {
 }
 
 .saved-club-list {
-    width: 20px;
+    margin-top: 5px;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.saved-club-used {
+    padding: 5px;
+    font-size: small;
+    font-weight: bold;
 }
 
 label {
@@ -509,5 +526,40 @@ label {
     padding: 5px 10px;
     color: white;
     border-radius: 10px;;
+}
+
+.ace {
+    background-color: #0154BC;
+    color: white;
+}
+
+.eagle {
+    background-color: #018BE4;
+    color: white;
+}
+
+.birdie {
+    background-color: #58BECD;
+    color: white;
+}
+
+.par {
+    background-color: #C6C6C6;
+    color: #014730;
+}
+
+.bogey {
+    background-color: #FFBD3A;
+    color: white;
+}
+
+.double-bogey {
+    background-color: #fd7201;
+    color: white;
+}
+
+.triple-bogey {
+    background-color: #fd3801;
+    color: white;
 }
 

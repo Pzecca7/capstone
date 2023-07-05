@@ -67,7 +67,6 @@ const savedShots = () => {
         clubs: savedClubs,
         score: savedClubs.length
 
-
     }
 
     console.log(bodyObj)
@@ -122,6 +121,7 @@ const displayShots = shotsArr => {
          if(+hole === +holeSelect.value){
 
             let listItem = document.createElement('li')
+            listItem.classList.add('club-used')
             let clubSelection = document.createElement('span')
             let removeShotBtn = document.createElement('button')
             removeShotBtn.classList.add('remove-shot')
