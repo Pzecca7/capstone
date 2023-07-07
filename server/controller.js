@@ -7,7 +7,10 @@ let resultDB = require('./db-3.json')
 let resultID = 1
 
 let roundDB = require('./db-4.json')
-let roundID = 2
+let roundID = 1
+
+// let dateDB = require('./db-5.json')
+// let dateID = 1
 
 
 
@@ -114,5 +117,12 @@ module.exports = {
     
     getResults: (req,res) => {
         res.status(200).send(resultDB)
-    }
+    },
+
+    // addDate: (req,res) => {
+    //     req.body.id = dateID
+    //     dateDB.push(req.body)
+    //     res.status(200).send(dateDB)
+    //     dateID++
+    // }
 }

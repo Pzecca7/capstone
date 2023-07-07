@@ -29,7 +29,8 @@ app.get('/', (req,res) => {
          updateOutScore,
          updateInScore,
          updateTotalScore,
-         getResults
+         getResults,
+         addDate
 
 } = require('./controller')
 
@@ -45,8 +46,7 @@ app.get('/', (req,res) => {
  app.put("/hamiltonfarm/out-score/:round", updateOutScore)
  app.put("/hamiltonfarm/in-score/:round", updateInScore)
  app.put("/hamiltonfarm/total-score/:round", updateTotalScore)
-
-
+//  app.post("/hamiltonfarm/date", addDate)
  app.get("/hamiltonfarm/results", getResults)
  
 

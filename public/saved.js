@@ -171,7 +171,7 @@ const createRoundContainer = (round) => {
             <div class="hole">
                 <div class="num" id="hole-11">
                 </div>
-                <div class="clubs" id="saved-clubs-11 ">
+                <div class="clubs" id="saved-clubs-11">
                 </div>
                 <div class="hole-score-box" id="hole-score-box-11">
                 </div>
@@ -277,300 +277,306 @@ const displayResults = resultsArr => {
     
 
     resultsArr.forEach((resultsObj) => {
-        let { hole, clubs, score} = resultsObj
+
+
+    let { hole, clubs, score, date} = resultsObj
+
+    // if( date === roundDate.value) {
 
         let holeNumberBox = document.querySelector(`#hole-${hole}`)
 
-        let savedClubs = document.querySelector(`#saved-clubs-${hole}`)
+            let savedClubs = document.querySelector(`#saved-clubs-${hole}`)
 
-        let holeScoreBox = document.querySelector(`#hole-score-box-${hole}`)
+            let holeScoreBox = document.querySelector(`#hole-score-box-${hole}`)
+
+
+
+            holeNumberBox.innerHTML = ` `
+
+            savedClubs.innerHTML = ` `
+
+            holeScoreBox.innerHTML = ` `
+
+
+            let holeNumber = document.createElement("p")
+                holeNumber.classList.add('hole-number')
+                holeNumber.textContent = hole
+
+            let savedClubList = document.createElement("ul")
+                savedClubList.classList.add('saved-club-list')
+            for( i = 0; i < clubs.length; i++){
+                let club = document.createElement("li")
+                club.classList.add("saved-club-used")
+                club.textContent = clubs[i]
+                savedClubList.appendChild(club)
+            }
+
+            let holeScore = document.createElement("p")
+                holeScore.classList.add('hole-score')
+                holeScore.textContent = score
+
 
         
+            if (+hole === 2 && +score === 3) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 2 && +score === 4) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 2 && +score === 5) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 2 && +score === 6) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 2 && +score === 7) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 2 && +score === 8) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
 
-        holeNumberBox.innerHTML = ` `
+            if (+hole === 9 && +score === 3) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 9 && +score === 4) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 9 && +score === 5) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 9 && +score === 6) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 9 && +score === 7) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 9 && +score === 8) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
 
-        savedClubs.innerHTML = ` `
+            if (+hole === 11 && +score === 3) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 11 && +score === 4) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 11 && +score === 5) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 11 && +score === 6) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 11 && +score === 7) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 11 && +score === 8) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
 
-        holeScoreBox.innerHTML = ` `
+            if (+hole === 14 && +score === 3) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 14 && +score === 4) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 14 && +score === 5) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 14 && +score === 6) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 14 && +score === 7) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 14 && +score === 8) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 3 && +score === 1) {
+                holeScoreBox.classList.add('ace')
+            } else if (+hole === 3 && +score === 2) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 3 && +score === 3) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 3 && +score === 4) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 3 && +score === 5) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 3 && +score === 6) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 7 && +score === 1) {
+                holeScoreBox.classList.add('ace')
+            } else if (+hole === 7 && +score === 2) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 7 && +score === 3) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 7 && +score === 4) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 7 && +score === 5) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 7 && +score === 6) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 12 && +score === 1) {
+                holeScoreBox.classList.add('ace')
+            } else if (+hole === 12 && +score === 2) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 12 && +score === 3) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 12 && +score === 4) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 12 && +score === 5) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 12 && +score === 6) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 17 && +score === 1) {
+                holeScoreBox.classList.add('ace')
+            } else if (+hole === 17 && +score === 2) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 17 && +score === 3) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 17 && +score === 4) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 17 && +score === 5) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 17 && +score === 6) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 1 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 1 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 1 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 1 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 1 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 1 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 4 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 4 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 4 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 4 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 4 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 4 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 5 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 5 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 5 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 5 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 5 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 5 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 6 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 6 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 6 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 6 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 6 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 6 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 8 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 8 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 8 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 8 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 8 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 8 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 10 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 10 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 10 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 10 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 10 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 10 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 13 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 13 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 13 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 13 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 13 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 13 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 15 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 15 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 15 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 15 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 15 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 15 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 16 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 16 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 16 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 16 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 16 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 16 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            if (+hole === 18 && +score === 2) {
+                holeScoreBox.classList.add('eagle')
+            } else if (+hole === 18 && +score === 3) {
+                holeScoreBox.classList.add('birdie')
+            } else if (+hole === 18 && +score === 4) {
+                holeScoreBox.classList.add('par')
+            } else if (+hole === 18 && +score === 5) {
+                holeScoreBox.classList.add('bogey')
+            } else if (+hole === 18 && +score === 6) {
+                holeScoreBox.classList.add('double-bogey')
+            } else if (+hole === 18 && +score === 7) {
+                holeScoreBox.classList.add('triple-bogey')
+            }
+
+            holeNumberBox.appendChild(holeNumber)
+
+            savedClubs.appendChild(savedClubList)
+
+            holeScoreBox.appendChild(holeScore)
 
 
-        let holeNumber = document.createElement("p")
-            holeNumber.classList.add('hole-number')
-            holeNumber.textContent = hole
-
-        let savedClubList = document.createElement("ul")
-            savedClubList.classList.add('saved-club-list')
-        for( i = 0; i < clubs.length; i++){
-            let club = document.createElement("li")
-            club.classList.add("saved-club-used")
-            club.textContent = clubs[i]
-            savedClubList.appendChild(club)
-        }
-
-        let holeScore = document.createElement("p")
-            holeScore.classList.add('hole-score')
-            holeScore.textContent = score
-
-            
-       
-        if (+hole === 2 && +score === 3) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 2 && +score === 4) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 2 && +score === 5) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 2 && +score === 6) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 2 && +score === 7) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 2 && +score === 8) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 9 && +score === 3) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 9 && +score === 4) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 9 && +score === 5) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 9 && +score === 6) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 9 && +score === 7) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 9 && +score === 8) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 11 && +score === 3) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 11 && +score === 4) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 11 && +score === 5) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 11 && +score === 6) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 11 && +score === 7) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 11 && +score === 8) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 14 && +score === 3) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 14 && +score === 4) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 14 && +score === 5) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 14 && +score === 6) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 14 && +score === 7) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 14 && +score === 8) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 3 && +score === 1) {
-            holeScoreBox.classList.add('ace')
-        } else if (+hole === 3 && +score === 2) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 3 && +score === 3) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 3 && +score === 4) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 3 && +score === 5) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 3 && +score === 6) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 7 && +score === 1) {
-            holeScoreBox.classList.add('ace')
-        } else if (+hole === 7 && +score === 2) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 7 && +score === 3) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 7 && +score === 4) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 7 && +score === 5) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 7 && +score === 6) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 12 && +score === 1) {
-            holeScoreBox.classList.add('ace')
-        } else if (+hole === 12 && +score === 2) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 12 && +score === 3) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 12 && +score === 4) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 12 && +score === 5) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 12 && +score === 6) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 17 && +score === 1) {
-            holeScoreBox.classList.add('ace')
-        } else if (+hole === 17 && +score === 2) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 17 && +score === 3) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 17 && +score === 4) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 17 && +score === 5) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 17 && +score === 6) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 1 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 1 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 1 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 1 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 1 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 1 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 4 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 4 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 4 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 4 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 4 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 4 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 5 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 5 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 5 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 5 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 5 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 5 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 6 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 6 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 6 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 6 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 6 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 6 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 8 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 8 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 8 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 8 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 8 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 8 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 10 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 10 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 10 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 10 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 10 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 10 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 13 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 13 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 13 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 13 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 13 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 13 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 15 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 15 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 15 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 15 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 15 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 15 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 16 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 16 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 16 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 16 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 16 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 16 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        if (+hole === 18 && +score === 2) {
-            holeScoreBox.classList.add('eagle')
-        } else if (+hole === 18 && +score === 3) {
-            holeScoreBox.classList.add('birdie')
-        } else if (+hole === 18 && +score === 4) {
-            holeScoreBox.classList.add('par')
-        } else if (+hole === 18 && +score === 5) {
-            holeScoreBox.classList.add('bogey')
-        } else if (+hole === 18 && +score === 6) {
-            holeScoreBox.classList.add('double-bogey')
-        } else if (+hole === 18 && +score === 7) {
-            holeScoreBox.classList.add('triple-bogey')
-        }
-
-        holeNumberBox.appendChild(holeNumber)
-
-        savedClubs.appendChild(savedClubList)
-
-        holeScoreBox.appendChild(holeScore)
-
+        // }
 
     })
 

@@ -56,6 +56,9 @@ h3 {
 }
 
 nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
     height: 75px;
     width: 100vw;
     background-color: #fdd558;
@@ -76,6 +79,7 @@ nav{
 #barn {
     height: 100%;
     width: 100vw;
+    box-shadow: 5px 5px 10px #014730;
    
     
 }
@@ -534,12 +538,12 @@ label {
 }
 
 .eagle {
-    background-color: #018BE4;
+    background-color: #019ce4;
     color: white;
 }
 
 .birdie {
-    background-color: #58BECD;
+    background-color: #58c3cd;
     color: white;
 }
 

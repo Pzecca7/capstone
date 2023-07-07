@@ -2,6 +2,8 @@ const holeSection = document.querySelector('#hole-section')
 const holeForm = document.querySelector('#hole-form')
 const holeSelect = document.querySelector('#hole')
 const submitHoleBtn = document.querySelector('.submit-btn')
+// const dateInput = document.querySelector('#date-input')
+// const addDateBtn = document.querySelector('#add-date-btn')
 
 let savedClubs = []
 
@@ -64,6 +66,7 @@ const savedShots = () => {
 
     let bodyObj = {
         hole: holeSelect.value,
+        // date: dateInput.value,
         clubs: savedClubs,
         score: savedClubs.length
 
@@ -76,6 +79,20 @@ const savedShots = () => {
     }).catch(err => console.log(err))
         savedClubs= []
 }
+
+// const addDate = () => {
+
+//     let bodyObj = {
+//         date: dateInput.value
+
+//     }
+
+//     console.log(bodyObj)
+
+//     axios.post(`${baseURL}/date`, bodyObj)
+//     .then(response => {  
+//     }).catch(err => console.log(err))
+// }
 
 const createHoleContainer = (hole) => {
 
@@ -157,3 +174,4 @@ const submitNewHole = event => {
 }
 
 submitHoleBtn.addEventListener("click", submitNewHole)
+// addDateBtn.addEventListener("click", addDate)
