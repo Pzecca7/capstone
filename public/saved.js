@@ -35,22 +35,22 @@ const removeRound = (round) => {
     }).catch(err => console.log(err))
 }
 
-const updateOutScore = (round, type) => {
-    axios.put(`${baseURL}/out-score/${round}`, {type})
+const updateOutScore = (score, type) => {
+    axios.put(`${baseURL}/out-score/${score}`, {type})
     .then(response => {
         displayRound(response.data)
     }).catch(err => console.log(err))
 }
 
-const updateInScore = (round, type) => {
-    axios.put(`${baseURL}/in-score/${round}`, {type})
+const updateInScore = (score, type) => {
+    axios.put(`${baseURL}/in-score/${score}`, {type})
     .then(response => {
         displayRound(response.data)
     }).catch(err => console.log(err))
 }
 
-const updateTotalScore = (round, type) => {
-    axios.put(`${baseURL}/total-score/${round}`, {type})
+const updateTotalScore = (score, type) => {
+    axios.put(`${baseURL}/total-score/${score}`, {type})
     .then(response => {
         displayRound(response.data)
     }).catch(err => console.log(err))

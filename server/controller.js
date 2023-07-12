@@ -69,9 +69,9 @@ module.exports = {
         res.status(200).send(roundDB)
     },
     updateOutScore: (req,res) => {
-        let { round } = req.params
+        let { score } = req.params
         let { type } = req.body
-        let index = roundDB.findIndex(scoreCard => scoreCard.round === +round)
+        let index = roundDB.findIndex(scoreCard => scoreCard.round === +score)
         if(type === 'minus' && roundDB[index].out > 20){
             roundDB[index].out -= 1
         } else if(type === 'plus' && roundDB[index].out < 60){
@@ -85,9 +85,9 @@ module.exports = {
 
     },
     updateInScore: (req,res) => {
-        let { round } = req.params
+        let { score } = req.params
         let { type } = req.body
-        let index = roundDB.findIndex(scoreCard => scoreCard.round === +round)
+        let index = roundDB.findIndex(scoreCard => scoreCard.round === +score)
         if(type === 'minus' && roundDB[index].in > 20){
             roundDB[index].in -= 1
         } else if(type === 'plus' && roundDB[index].in < 60){
@@ -100,9 +100,9 @@ module.exports = {
         res.status(200).send(roundDB)
     },
     updateTotalScore: (req,res) => {
-        let { round } = req.params
+        let { score } = req.params
         let { type } = req.body
-        let index = roundDB.findIndex(scoreCard => scoreCard.round === +round)
+        let index = roundDB.findIndex(scoreCard => scoreCard.round === +score)
         if(type === 'minus' && roundDB[index].total > 50){
             roundDB[index].total -= 1
         } else if(type === 'plus' && roundDB[index].total < 120){

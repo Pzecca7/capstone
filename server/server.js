@@ -43,9 +43,9 @@ app.get('/', (req,res) => {
  app.get("/hamiltonfarm/round", getRounds)
  app.post("/hamiltonfarm/round", addRound)
  app.delete("/hamiltonfarm/round/:round", removeRound)
- app.put("/hamiltonfarm/out-score/:round", updateOutScore)
- app.put("/hamiltonfarm/in-score/:round", updateInScore)
- app.put("/hamiltonfarm/total-score/:round", updateTotalScore)
+ app.put("/hamiltonfarm/out-score/:score", updateOutScore)
+ app.put("/hamiltonfarm/in-score/:score", updateInScore)
+ app.put("/hamiltonfarm/total-score/:score", updateTotalScore)
 //  app.post("/hamiltonfarm/date", addDate)
  app.get("/hamiltonfarm/results", getResults)
  
